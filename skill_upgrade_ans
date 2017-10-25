@@ -1,0 +1,146 @@
+1.what is list and tuple?
+list: List is a mutable sequence of elements(int,float,strings,characters) separated by commas enclosed in square brackets.
+eg:[1,"a","str",9.0]
+tuple: Tuple is a immutable sequence of elements(int,float,strings,characters) separated by commas enclosed in Braces.
+eg:(1,"a","str",9.0)
+
+2.when to use list and when to use tuple.
+
+lists are dynamic in nature whereas tuples are fixed in nature.
+
+
+Tuples are fixed size in nature whereas lists are dynamic.
+In other words, a tuple is immutable whereas a list is mutable.
+print m
+
+    You can't add elements to a tuple. Tuples have no append or extend method.
+    You can't remove elements from a tuple. Tuples have no remove or pop method.
+    You can find elements in a tuple, since this doesn’t change the tuple.
+    You can also use the in operator to check if an element exists in the tuple.
+Tuples are faster than lists. If you're defining a constant set of values and all you're ever going to do with it is iterate through it, use a tuple instead of a list.
+
+It makes your code safer if you “write-protect” data that does not need to be changed. Using a tuple instead of a list is like having an implied assert statement that this data is constant, and that special thought (and a specific function) is required to override that.
+
+  
+3.what is isstance?,where can you use isinstance?
+
+Instance is referenced to a method and isinstance is used to identify a particular datatype
+eg: a=5
+isinstance(a,int)
+>>True
+
+depends on the result it will be returing True or false
+
+4.basic data types in python
+List
+tuple
+dictionary
+set
+numbers
+
+5.what are different data structures in python?
+list
+tuple
+dictionary
+sets
+strings
+
+6.how can u add a list(list of elements) to an existing list?
+we can add a list to an existing list by using append
+a=[1,2,3,4]
+b=[1,2,3,4]
+b.extend(a)
+
+7.what is set?
+a set is a unique mutable unordered sequence of elements (int,float,strings,characters) separated by commas and enclosed in flower braces
+a={1,"a","b",4,"pp"}
+
+8.what is frozonset?
+a frozenset is to make a set as immutable.
+a={1,"a","b",4,"pp"}
+frozenset.add(6)# throws an error
+
+9.what different keywords in python,can we use keywords as variables?
+
+and       del       from      not       while
+as        elif      global    or        with
+assert    else      if        pass      yield
+break     except    import    print
+class     exec      in        raise
+continue  finally   is        return 
+def       for       lambda    try
+
+we cannot use keywords as variables as keywords are reserved words.
+
+10.print the elements of the list by skipping 2 elements ?
+	ex l=[1,2,3,4,5,6,7,8,9] output = [1,4,7]
+
+l=[1,2,3,4,5,6,7,8,9]
+m=l[0:9:3]
+print m
+o/p : [1,4,7]
+
+11.Reverse a list with out using built in functions?
+l=[1,2,3,4,5,6,7,8,9]
+c=l[::-1]
+print l
+
+12.what are dict? write dict functions?
+dict is a inbuilt function for dictionary which is a key-value pair 
+
+cmp(dict1,dict2)
+len(dict)
+str(dict)
+type(variable)
+dict.items()
+dict.keys()
+dict.values()
+dict.update(dict1)
+
+13.find second largest number in the given list without using built in functions?
+14.Transform list to other data structure?
+list1=[1,2,3,4]
+b=tuple(list1)
+print b
+o/p: (1,2,3,4)
+
+15.how to create flat list from list of lists? ex l=[[1,2],[6,3],[4,5]] o/p = [1,2,6,3,4,5]
+l=[[1,2],[6,3],[4,5]]
+b=reduce(lambda x,y: x+y,l)
+print b
+
+16.Split the list into evenly sized chunks? 
+ ex : if l=[1,2,3,4,5,6,7,8,9] o/p = [(1,2,3),(4,5,6),(7,8,9)]
+17.what is list comprehension and how does it works?
+list comphrehension is a way of creating a list in a consise way
+																																													
+
+
+18.How can you copy a dict into other dict?
+
+dict1={1:2,5:6}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+dict2=dict1.copy()
+
+19.what is the output of the following code ?
+	s1="python"
+	s2=s1
+	s2.replace("p","j")
+	print s1,s2
+s1="python"
+s2="jython"
+20.what is the output of the following code ?
+	l=[1,2,3,4]
+	l1=l
+	l2=l[:]
+	l1.append(5)
+	print l
+	print l1
+	print																																																																																																																																																																						l2
+[1,2,3,4,5]																																																																																																																																																																																																									
+[1,2,3,4,5]
+[1,2,3,4,5]
+
+
+
+
+
